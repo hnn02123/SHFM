@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <title>Thymeleaf가 적용된 페이지</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+   <div th:insert="~{fragments/header::header}"></div>
+   
+   <h1 th:text="${greeting}">Thymeleaf가 적용된 페이지</h1>
+
+   <div th:insert="~{fragments/footer::footer}"></div>
+</body>
+
+</html>
