@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{/layout/layout2}">
+
+<div layout:fragment="content">
+
+	<div th:insert="~{fragments/topmenu::topmenu}"></div>
+	<div th:insert="~{fragments/header::header}"></div>
+	<div th:insert="~{fragments/footer::footer}"></div>
+
+	<div class="panel-heading">List Page</div>
+	<div class="panel-body">
+		<p>[(${result})]</p>
+		<!-- <p>[(${result.content})]</p> -->
+		<p>
+	</div>
+
+</div>
+
+<th:block layout:fragment="script">
+<script th:inline="javascript">
+</script>
+</th:block>

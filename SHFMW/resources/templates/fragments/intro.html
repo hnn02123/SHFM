@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+</head>
+<body>
+<div th:fragment="intro">
+
+<!-- 화면 중앙에 이미지를 보여준다. -->
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="myCarousel" data-slide-to="1"></li>
+			<li data-target="myCarousel" data-slide-to="2"></li>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!-- class="img-responsive center-block" => 반응형 이미지를 가운데에 정렬한다. -->
+				<img class="img-responsive center-block" src="/images/intro1.jpg"/>
+				<!-- carousel에 설명을 달아준다. -->
+				<div class="carousel-caption">
+					
+				</div>
+			</div>
+			<div class="item">
+				<!-- class="img-responsive center-block" => 반응형 이미지를 가운데에 정렬한다. -->
+				<img class="img-responsive center-block" src="/images/intro2.jpg"/>
+				<!-- carousel에 설명을 달아준다. -->
+				<div class="carousel-caption">
+					
+				</div>
+			</div>
+			<div class="item">
+				<!-- class="img-responsive center-block" => 반응형 이미지를 가운데에 정렬한다. -->
+				<img class="img-responsive center-block" src="/images/intro3.jpg"/>
+				<!-- carousel에 설명을 달아준다. -->
+				<div class="carousel-caption">
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-- 좌측, 우측으로 그림을 움직일 수 있도록 좌, 우 버튼을 설정한다. -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"  aria-hidden="true"></span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
+		
+	</div>
+</div>
+
+
+
+</body>
+</html>

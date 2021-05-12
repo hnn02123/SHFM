@@ -1,0 +1,99 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{/layout/layout1}">
+
+<head>
+	<title>Thymeleaf3</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+
+</head>
+<body>
+
+	
+	<div layout:fragment="content">
+
+	<div class="container">
+	
+	<div th:insert="~{fragments/topmenu::topmenu}"></div>
+
+	<div class="intro" th:insert="~{fragments/intro::intro}"></div>
+		
+	
+	<div class="main-item-box">
+		<div class="main-prd-list">
+			<div class="main-prd-box">
+				<a class="link-prod" href="#"></a>
+					<img src="/images/used1.jpg" class="main-prd-item-img" /> <!-- 상품이미지 -->
+					<ul class="main-prd-item">
+						<li class="prd-item-company">제조사</li> <!-- 제조사 -->
+						<li class="prd-item-name" >상품명</li> <!-- 상품명 -->
+						<li class="prd-item-price">가격</li> <!-- 가격 -->
+						<li class="prd-item-soldCount">판매량</li> <!-- 판매량 default = 0 -->
+					</ul>
+			</div>
+			
+				<div class="main-prd-box">
+				<a class="link-prod" href="#"></a>
+					<img src="/images/used1.jpg" class="main-prd-item-img" /> <!-- 상품이미지 -->
+					<ul class="main-prd-item">
+						<li class="prd-item-company">제조사</li> <!-- 제조사 -->
+						<li class="prd-item-name" >상품명</li> <!-- 상품명 -->
+						<li class="prd-item-price">가격</li> <!-- 가격 -->
+						<li class="prd-item-soldCount">판매량</li> <!-- 판매량 default = 0 -->
+					</ul>
+			</div>
+				<div class="main-prd-box">
+				<a class="link-prod" href="#"></a>
+					<img src="/images/used1.jpg" class="main-prd-item-img" /> <!-- 상품이미지 -->
+					<ul class="main-prd-item">
+						<li class="prd-item-company">제조사</li> <!-- 제조사 -->
+						<li class="prd-item-name" >상품명</li> <!-- 상품명 -->
+						<li class="prd-item-price">가격</li> <!-- 가격 -->
+						<li class="prd-item-soldCount">판매량</li> <!-- 판매량 default = 0 -->
+					</ul>
+			</div>
+				<div class="main-prd-box">
+				<a class="link-prod" href="#"></a>
+					<img src="/images/used1.jpg" class="main-prd-item-img" /> <!-- 상품이미지 -->
+					<ul class="main-prd-item">
+						<li class="prd-item-company">제조사</li> <!-- 제조사 -->
+						<li class="prd-item-name" >상품명</li> <!-- 상품명 -->
+						<li class="prd-item-price">가격</li> <!-- 가격 -->
+						<li class="prd-item-soldCount">판매량</li> <!-- 판매량 default = 0 -->
+					</ul>
+			</div>
+			
+				<div class="main-prd-box">
+				<a class="link-prod" href="#"></a>
+					<img src="/images/used1.jpg" class="main-prd-item-img" /> <!-- 상품이미지 -->
+					<ul class="main-prd-item">
+						<li class="prd-item-company">제조사</li> <!-- 제조사 -->
+						<li class="prd-item-name" >상품명</li> <!-- 상품명 -->
+						<li class="prd-item-price">가격</li> <!-- 가격 -->
+						<li class="prd-item-soldCount">판매량</li> <!-- 판매량 default = 0 -->
+					</ul>
+			</div>
+			
+				<div class="main-prd-box">
+				<a class="link-prod" href="#"></a>
+					<img src="/images/used1.jpg" class="main-prd-item-img" /> <!-- 상품이미지 -->
+					<ul class="main-prd-item">
+						<li class="prd-item-company">제조사</li> <!-- 제조사 -->
+						<li class="prd-item-name" >상품명</li> <!-- 상품명 -->
+						<li class="prd-item-price">가격</li> <!-- 가격 -->
+						<li class="prd-item-soldCount">판매량</li> <!-- 판매량 default = 0 -->
+					</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	</div>
+		
+	</div>
+	
+	<div th:insert="~{fragments/footer::footer}"></div>
+	
+</body>
+</html>
